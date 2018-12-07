@@ -38,30 +38,26 @@ def callback():
     msg_data = loadMsg.msg_data["_" + str(rand_num)]
 
     # 写入时间
-    time_msg = "<h3>" + msg_data["time"] + "</h3>"
-    ret += time_msg
+    ret += "<h3> %s </h3>"%(msg_data["time"])
 
     # 写入对话
     dialogue_list = msg_data["dialogue"].split("|")
     for dialogue in dialogue_list:
-        dialogue_msg = "<p>" + dialogue + "</p>"
-        ret += dialogue_msg
+        ret += "<p> %s </p>"%(dialogue)
 
     # 加上一些空行
-    ret += "<p>.</p>"
+    ret += "<br />"
 
     # 写入认识的日期
-    ret += "<h3>" + "相识于2018年11月8日21点52分" + "</h3>"
+    ret += '<h3>相识于2018年11月8日21点52分</h3>'
     # 写入已经认识的时间
     # 2018/11/8 21:52:0 = 1541685120
     now_time = time.time()
     pass_time = time.localtime(now_time - 1541685120)
-    time_msg = "已相识" + str(pass_time.tm_year - 1970) + "年" + str(pass_time.tm_mon - 1) + "月" + str(pass_time.tm_mday) + "日" + str(pass_time.tm_hour) + "时" + str(pass_time.tm_min) + "分" + str(pass_time.tm_sec) + "秒"
-    time_msg = "<h3>" + time_msg + "<h3>"
-    ret += time_msg
+    ret += "<h3>已相识%s年%s月%s日%s时%s分%s秒<h3>"%(pass_time.tm_year - 1970, pass_time.tm_mon - 1, pass_time.tm_mday, pass_time.tm_hour, pass_time.tm_min, pass_time.tm_sec)
 
     # 加上一些空行
-    ret += "<p>.</p>"
+    ret += "<br />"
 
     # 我们间的第一次
     ret += "<h3>我们间的第一次<h3>"
@@ -70,17 +66,17 @@ def callback():
         ret += "<p>" + loadMsg.one_data[event]["event"] + "</p>"
 
     # 加上一些空行
-    ret += "<p>.</p>"
+    ret += "<br />"
 
     # 献上仙女的八十二变
     ret += "<p>" + "她平时的样子" + "</p>"
-    ret += "<p><img src='/image/sisi_self/who.png'</p>"
+    ret += "<p><img src='/image/sisi_self/who.png' alt='who' width='100' height='100'</p>"
     ret += "<p>" + "当你问她是谁时" + "</p>"
-    ret += "<p><img src='/image/sisi_self/tell.png'</p>"
+    ret += "<p><img src='/image/sisi_self/tell.png' alt='tell' width='100' height='100'</p>"
     ret += "<p>" + "当你要反驳她时" + "</p>"
-    ret += "<p><img src='/image/sisi_self/angry.png'</p>"
+    ret += "<p><img src='/image/sisi_self/angry.png' alt='angry' width='100' height='100'</p>"
     ret += "<p>" + "当她撒娇时" + "</p>"
-    ret += "<p><img src='/image/sisi_self/coquetry.gif'</p>"
+    ret += "<p><img src='/image/sisi_self/coquetry.gif' alt='coquetry' width='100' height='100'</p>"
     ret += "</body></html>"
 
     return ret

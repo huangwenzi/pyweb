@@ -12,12 +12,12 @@ class LoadMsg():
     # 初始化
     def __init__(self):
         # 读取对话内容
-        with open('msg_data.toml', 'rb') as fin:
+        with open('data/msg_data.toml', 'r', encoding='utf-8') as fin:
             self.msg_data = toml.load(fin)
             self.msg_count = len(self.msg_data)
 
         # 读取第一次数据
-        with open('one_data.toml', 'rb') as fin:
+        with open('data/one_data.toml', 'r', encoding='utf-8') as fin:
             self.one_data = toml.load(fin)
             self.one_count = len(self.one_data)
             
