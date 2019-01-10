@@ -61,7 +61,7 @@ class GetHtml():
     # 获取我们间的回忆
     def getWeMemory(self):
         # 先写入开头
-        ret = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>仙女的八十二变</title></head><body>'
+        ret = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>我们间的回忆</title></head><body>'
 
         # 循环写入每一件事
         for index in range(1,loadMsg.weMemory_count + 1):
