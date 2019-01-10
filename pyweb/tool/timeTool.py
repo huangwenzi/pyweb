@@ -11,8 +11,8 @@ class timr_dbj():
     tm_min = 0
     tm_sec = 0
 
-# 这个系一个时间工具，用来计算技能时间
-class Time_tool():
+# 这个系一个时间工具，用来计算时间
+class TimeTool():
 
     # 计算两个时间的时间差
     # time1 : 时间戳
@@ -69,4 +69,4 @@ class Time_tool():
 
         return pass_time
 
-time_tool = Time_tool()
+timeTool = TimeTool()
