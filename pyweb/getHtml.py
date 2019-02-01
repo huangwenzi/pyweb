@@ -4,8 +4,8 @@ import time
 
 # 自写模块
 from loadMsg import loadMsg
-from tool.timeTool import timeTool
-from config.global_cfg import global_cfg
+from tools.timeTool import timeTool
+from configs.global_cfg import global_cfg
 
 # 这个类用来专门返还html
 class GetHtml():
