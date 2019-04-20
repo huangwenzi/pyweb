@@ -8,10 +8,12 @@ from beaker.middleware import SessionMiddleware
 
 # 自写模块
 from getHtml import getHtml
+from configs.global_cfg import global_cfg
 
-# 公司地址 http://192.168.4.65:9090/getDogFood
-# 神舟地址 http://192.168.235.1:9090/getDogFood
-# 公网地址 http://118.126.112.214:9090/getDogFood
+# 公司地址 http://192.168.4.65:9999/getDogFood
+# 神舟地址 http://192.168.235.1:9999/getDogFood
+# 公网地址 http://118.126.112.214:9999/getDogFood
+# 域名地址 http://thiswen.cn:9999/getDogFood
 
 # 设置session参数
 session_opts = {
@@ -40,13 +42,17 @@ def callback():
     return getHtml.getDogFood()
 
 # 获取我们间的回忆
+@get('/getfairy')
+def getfairy():
+    return getHtml.getfairy()
+
+# 写入仙女样子的跳转
 @get('/getWeMemory')
-def callback():
+def getWeMemory():
     return getHtml.getWeMemory()
 
 # 函数主入口
 if __name__ == '__main__':
     app_argv = SessionMiddleware(default_app(), session_opts)
-    run(app=app_argv, host='0.0.0.0', port=9090, debug=True, reloader=True)
-    print(getHtml.myName)
-    print(getHtml.myAddr)
+    run(app=app_argv, host='0.0.0.0', port=global_cfg.prot, debug=True, reloader=True)
+
