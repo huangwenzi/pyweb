@@ -111,7 +111,7 @@ class GetHtml():
 
     # 黄涛的网页获取
     def getWhat(self):
-        with open("html\\index.html",'r', encoding='utf-8', errors='ignore') as f:
+        with open("webFile\\index.html",'r', encoding='utf-8', errors='ignore') as f:
             tmp_str = f.readlines()
             print(tmp_str)
         return tmp_str
