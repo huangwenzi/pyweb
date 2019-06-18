@@ -2,8 +2,8 @@
 #!/usr/bin/evn python
 # coding=utf-8
 # 系统或三方库
-from bottle import default_app, get, run
-from bottle import static_file
+from bottle import default_app, get, run, post
+from bottle import static_file, request
 from beaker.middleware import SessionMiddleware
 
 # 自写模块
