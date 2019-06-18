@@ -7,7 +7,7 @@ from bottle import static_file, request
 from beaker.middleware import SessionMiddleware
 
 # 自写模块
-from getHtml import getHtml
+from control.getHtml import getHtml
 from configs.global_cfg import global_cfg
 
 # 公司地址 http://192.168.4.65:9999/getDogFood
@@ -33,7 +33,35 @@ def server_static(filename):
 def server_memory(filename):
     print(filename)
     return static_file(filename, root='./image/memory')
-
+# 获取黄涛的文件
+@get('/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./json')
+@get('/jsFile/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./jsFile')
+@get('/libs/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./libs')
+@get('/js/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./js')
+@get('/test/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./json/test')
+@get('/res/atlas/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./res/atlas')
+@get('/prefab/<filename>')
+def server_memory(filename):
+    print(filename)
+    return static_file(filename, root='./prefab')
 
 # 获取网页部分
 # 获取网站主页
@@ -50,6 +78,11 @@ def getfairy():
 @get('/getWeMemory')
 def getWeMemory():
     return getHtml.getWeMemory()
+
+# 黄涛的网页获取
+@get('/getWhat')
+def getWeMemory():
+    return getHtml.getWhat()
 
 # 函数主入口
 if __name__ == '__main__':
