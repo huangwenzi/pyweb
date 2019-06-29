@@ -1,0 +1,1 @@
+{"type":"View","props":{"width":84,"height":84},"compId":2,"child":[{"type":"Sprite","props":{"y":0,"x":0,"texture":"test/tomato.png"},"compId":3,"child":[{"type":"Script","props":{"width":84,"height":84,"runtime":"laya.physics.BoxCollider"},"compId":8},{"type":"Script","props":{"runtime":"laya.physics.RigidBody"},"compId":9}]}],"loadList":["test/tomato.png"],"loadList3D":[]}

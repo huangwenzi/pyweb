@@ -110,10 +110,9 @@ class GetHtml():
         return ret
 
     # 黄涛的网页获取
-    def getWhat(self):
-        with open("webFile\\index.html",'r', encoding='utf-8', errors='ignore') as f:
+    def getGame(self, filename):
+        with open("game\\" + filename + "\\index.html",'r', encoding='utf-8', errors='ignore') as f:
             tmp_str = f.readlines()
-            print(tmp_str)
         return tmp_str
 
 getHtml = GetHtml()

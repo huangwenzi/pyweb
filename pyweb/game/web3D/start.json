@@ -1,0 +1,1 @@
+{"type":"View","props":{"width":640,"height":1136},"compId":2,"child":[{"type":"Sprite","props":{"y":0,"x":0,"width":640,"height":1136},"compId":4},{"type":"Sprite","props":{"y":519,"x":234,"var":"btnStart","texture":"comp/start.png","name":"btnStart","mouseEnabled":true},"compId":3}],"loadList":["comp/start.png"],"loadList3D":[]}

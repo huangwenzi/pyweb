@@ -1,0 +1,1 @@
+{"type":"View","props":{"width":104,"height":38},"compId":2,"child":[{"type":"Sprite","props":{"y":0,"x":0,"texture":"test/unit.png","name":"graund"},"compId":3},{"type":"Script","props":{"width":104,"height":38,"runtime":"laya.physics.BoxCollider"},"compId":8},{"type":"Script","props":{"runtime":"laya.physics.RigidBody"},"compId":9}],"loadList":["test/unit.png"],"loadList3D":[]}

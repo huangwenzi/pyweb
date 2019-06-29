@@ -35,16 +35,20 @@ session_opts = {
 #     return static_file(filename, root='./image/memory')
 # 获取黄涛的文件
 
-# 黄涛的网页获取
-@get('/getWhat')
-def getWeMemory():
-    print("getWhat")
-    return getHtml.getWhat()
-@get('/<path:path>')
+# 游戏主页面
+@get('/getGame/<filename>/index')
+def getWeMemory(filename):
+    print("getGame" + filename)
+    if "." in filename:
+        print("获取文件")
+        return static_file(filename, root='./game')
+    return getHtml.getGame(filename)
+# 游戏文件
+@get('/getGame/<path:path>')
 def server_memory(path):
     print("path")
     print(path)
-    return static_file(path, root='./webFile')
+    return static_file(path, root='./game')
 # @get('/a/<filename>')
 # def server_memory(filename):
 #     print("filename")
@@ -55,42 +59,16 @@ def server_memory(path):
 #     print("path")
 #     print(path)
 #     return static_file(path, root='./json')
-# @get('/jsFile/<filename>')
-# def server_memory(filename):
-#     print(filename)
-#     return static_file(filename, root='./jsFile')
-# @get('/libs/<filename>')
-# def server_memory(filename):
-#     print(filename)
-#     return static_file(filename, root='./libs')
-# @get('/js/<filename>')
-# def server_memory(filename):
-#     print(filename)
-#     return static_file(filename, root='./js')
-# @get('/test/<filename>')
-# def server_memory(filename):
-#     print(filename)
-#     return static_file(filename, root='./json/test')
-# @get('/res/atlas/<filename>')
-# def server_memory(filename):
-#     print(filename)
-#     return static_file(filename, root='./res/atlas')
-# @get('/prefab/<filename>')
-# def server_memory(filename):
-#     print(filename)
-#     return static_file(filename, root='./prefab')
 
 # 获取网页部分
 # 获取网站主页
 @get('/getDogFood')
 def callback():
     return getHtml.getDogFood()
-
 # 获取我们间的回忆
 @get('/getfairy')
 def getfairy():
     return getHtml.getfairy()
-
 # 写入仙女样子的跳转
 @get('/getWeMemory')
 def getWeMemory():

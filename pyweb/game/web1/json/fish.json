@@ -1,0 +1,147 @@
+{
+		"1": {
+			"mixH":"15",
+			"maxH":"100",
+			"fishSpeed":"3",
+			"life":"1",
+			"hookIntegral":"100",
+			"killIntegral":"200",
+			"mixNum":"50",
+			"maxNum":"80",
+			"fx":"67",
+			"fy":"40"				
+		},
+		"2": {
+			"mixH":"20",
+			"maxH":"150",
+			"fishSpeed":"4",
+			"life":"3",
+			"hookIntegral":"300",
+			"killIntegral":"600",
+			"mixNum":"30",
+			"maxNum":"50",
+			"fx":"112",
+			"fy":"52"				
+		},
+		"3": {
+			"mixH":"40",
+			"maxH":"180",
+			"fishSpeed":"3",
+			"life":"4",
+			"hookIntegral":"400",
+			"killIntegral":"800",
+			"mixNum":"10",
+			"maxNum":"30",
+			"fx":"142",
+			"fy":"28"				
+		},
+		"4": {
+			"mixH":"50",
+			"maxH":"200",
+			"fishSpeed":"2",
+			"life":"2",
+			"hookIntegral":"-200",
+			"killIntegral":"-400",
+			"mixNum":"30",
+			"maxNum":"50",
+			"fx":"30",
+			"fy":"5"				
+		},
+		"5": {
+			"mixH":"50",
+			"maxH":"200",
+			"fishSpeed":"4",
+			"life":"3",
+			"hookIntegral":"500",
+			"killIntegral":"800",
+			"mixNum":"20",
+			"maxNum":"40",
+			"fx":"125",
+			"fy":"43"				
+		},
+		"6": {
+			"mixH":"90",
+			"maxH":"200",
+			"fishSpeed":"4",
+			"life":"5",
+			"hookIntegral":"500",
+			"killIntegral":"1000",
+			"mixNum":"15",
+			"maxNum":"30",
+			"fx":"161",
+			"fy":"25"				
+		},
+		"7": {
+			"mixH":"0",
+			"maxH":"290",
+			"fishSpeed":"6",
+			"life":"8",
+			"hookIntegral":"800",
+			"killIntegral":"1600",
+			"mixNum":"5",
+			"maxNum":"10",
+			"fx":"138",
+			"fy":"78"				
+		},
+		"8": {
+			"mixH":"30",
+			"maxH":"250",
+			"fishSpeed":"4",
+			"life":"5",
+			"hookIntegral":"500",
+			"killIntegral":"1000",
+			"mixNum":"50",
+			"maxNum":"80",
+			"fx":"200",
+			"fy":"60"				
+		},
+		"9": {
+			"mixH":"160",
+			"maxH":"260",
+			"fishSpeed":"2",
+			"life":"6",
+			"hookIntegral":"-800",
+			"killIntegral":"-1600",
+			"mixNum":"4",
+			"maxNum":"12",
+			"fx":"43",
+			"fy":"5"				
+		},
+		"10": {
+			"mixH":"190",
+			"maxH":"290",
+			"fishSpeed":"6",
+			"life":"3",
+			"hookIntegral":"400",
+			"killIntegral":"500",
+			"mixNum":"30",
+			"maxNum":"50",
+			"fx":"43",
+			"fy":"33"				
+		},
+		"11": {
+			"mixH":"220",
+			"maxH":"290",
+			"fishSpeed":"6",
+			"life":"10",
+			"hookIntegral":"1000",
+			"killIntegral":"2000",
+			"mixNum":"0",
+			"maxNum":"2",
+			"fx":"128",
+			"fy":"48"				
+		},
+		"12": {
+			"mixH":"298",
+			"maxH":"298",
+			"fishSpeed":"4",
+			"life":"15",
+			"hookIntegral":"1500",
+			"killIntegral":"3000",
+			"mixNum":"1",
+			"maxNum":"1",
+			"fx":"152",
+			"fy":"48"				
+		}
+		
+}
